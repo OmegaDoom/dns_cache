@@ -12,6 +12,6 @@ std::string resolve(const std::string& name); - gets ip string by dns name. If e
 ## Requirements
 1. C++17 compiler
 
-##Caveatss
+## Caveats
 To achieve fine-grained parallelism for resove function each hash table bucket has its own shared mutex.
 This is not the best solution because mutexes are heavy. Imstead it would be better to have a mutex per thread but implementation in that case would be more complex 
