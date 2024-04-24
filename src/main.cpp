@@ -1,9 +1,3 @@
-#include <benchmark/benchmark.h>
-
-static void BM_Baseline(benchmark::State& state)
+int main()
 {
 }
-
-BENCHMARK(BM_Baseline)->Unit(benchmark::kMillisecond);
-
-BENCHMARK_MAIN();
